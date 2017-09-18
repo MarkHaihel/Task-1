@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <head>
 	<title>Staryi Sambir</title>
-  <link href="normalize.css" rel="stylesheet">
- <style>
-    header {
-      background: 
-      url('http://myshtetl.org/lvovskaja/images/starsambor_0005.jpg');
-      text-align: center;
-      background-size: cover;
-      color: black;
-    }
-  </style>
+	<script src="/assets/jquery.js"></script>
+	<link href="normalize.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <header>
+  <header class="All MainPage">
     <h1>Staryi Sambir</h1>
-    <ul>
-      <li><a href="MainPage.html">Staryi Sambir</a></li>
-      <li><a href="Jewish_cemetery.html">Jewish cemetery</a></li>
-      <li><a href="Windmills.html">Windmills</a></li>
-    </ul>
+	<div id="stariy sambir" class="menu">
+		<span class="title"></span>
+		<ul>
+		  <li><a href="MainPage.html">Staryi Sambir</a></li>
+		  <li><a href="Jewish_cemetery.html">Jewish cemetery</a></li>
+		  <li><a href="Windmills.html">Windmills</a></li>
+		</ul>
+	</div>
+
+  </div>
   </header>
   <article>
    <h2>Staryi Sambir</h2> 
@@ -36,5 +34,13 @@
     In the immediate postwar period, the remaining ethnic Poles were expelled. Most of them settled in the Recovered Territories. Ukrainians were resettled following Operation Vistula.
     </p>
   </article>
+  <script>
+    var menuElem = document.getElementById('stariy sambir');
+    var titleElem = menuElem.querySelector('.title');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+  </script>
 </body>
 

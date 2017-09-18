@@ -1,15 +1,60 @@
+	.menu ul {
+      margin: 0;
+      list-style: none;
+      padding-left: 20px;
+      display: none;
+    }
 
+    .menu .title {
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .menu .title::before {
+      content: url("https://upload.wikimedia.org/wikipedia/commons/9/90/Sambor.png");
+      font-size: 80%;
+      color: white;
+    }
+
+    .menu.open .title::before {
+      content: url("https://upload.wikimedia.org/wikipedia/commons/9/90/Sambor.png");
+    }
+
+    .menu.open ul {
+      display: block;
+    }
+	
+	header.All {
+      text-align: center;
+      background-size: cover;
+	  background-position: center;
+      color: black;
+    }
+	.MainPage {
+      background: 
+      url('http://myshtetl.org/lvovskaja/images/starsambor_0005.jpg');
+	}
+	.Jewish {
+      background: 
+      url('http://static.panoramio.com/photos/large/41146525.jpg');
+	}
+    .Windmills{
+		background: 
+      url('https://lh3.googleusercontent.com/q-YjaKwJNwQX-BiqN6wNKZFQ1z4YClvb9wynwbHVYPP4qj_xuXhJTnNJXCQm3WZreQCxFU1ZqPd_uw=w1680-h1050-no');
+	}
     a {
       color: white;
     }
     h1 {
-      padding: 130px;
-      font-size: 70px;
+      padding: 70px;
+      font-size: 60px;
+	  font-family: 'Londrina Shadow', cursive;
     }
     ul {
       padding: 10px;
       background: rgba(0,0,0,0.5);
-    }
+	}
+	
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
@@ -19,6 +64,7 @@
       padding: 10px;
       margin: 0 auto;
     }
+	
     @media (max-width: 500px) {
       h1 {
         font-size: 35px;
